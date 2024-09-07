@@ -1,0 +1,17 @@
+.dice-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .dice-button i {
+    transition: transform 1s;
+    display: inline-block;
+  }
+  
+  .dice-button i.rolling {
+    transform: rotate(360deg);
+  }
+  

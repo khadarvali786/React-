@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './App.css'
+import LikeButton from '../LikeButton';
 function App() {
   let [count,setCount] = useState(0);
+  console.log("Rendered")
   let increment = ()=>{
     setCount(count+1)
   }
@@ -21,7 +23,11 @@ function App() {
      &emsp;
      <button onClick={decrement}>Decrease</button><br /><br />
      <button onClick={resetCount} >Reset</button>
+     <>
+     <LikeButton/>
+     </>
     </>
+
   )
 }
 
